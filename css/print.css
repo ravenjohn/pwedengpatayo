@@ -1,0 +1,30 @@
+#intro{
+	display: inline;
+}
+
+#intro p{
+	text-indent: 20px;
+}
+
+#pac-input {
+	margin-top: 250px;
+}
+
+#map{
+	margin-top: 250px;
+	height: 300px !important;
+	width: 670px !important;
+}
+
+#canvas{
+	width: 1366px !important;
+	margin-top: 230px;
+}
+
+.sktch, #print_button, #draw_button{
+	display: none !important;
+}
+
+
+body{
+}

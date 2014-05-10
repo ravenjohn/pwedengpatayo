@@ -1,0 +1,173 @@
+*{
+	font-family: 'Lato', 'Open Sans';
+}
+
+body, html, #map{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#target {
+	width: 345px;
+}
+
+#map{
+	position: absolute !important;
+	top: 0;
+	left: 0;
+}
+
+.controls {
+	margin-top: 16px;
+	border: 1px solid transparent;
+	border-radius: 2px 0 0 2px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 32px;
+	outline: none;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input{
+	background-color: #fff;
+	padding: 0 11px 0 13px;
+	width: 400px;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	text-overflow: ellipsis;
+	transition : left 3s, top 1s;
+	position: absolute;
+	z-index: 2;
+}
+
+#pac-input:focus {
+	border-color: #4d90fe;
+	margin-left: -1px;
+	padding-left: 14px;  /* Regular padding-left + 1. */
+	width: 401px;
+}
+
+.pac-container {
+	font-family: Roboto;
+}
+
+#type-selector {
+	color: #fff;
+	background-color: #4d90fe;
+	padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+#overlay {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #001411;
+	pointer-events: none;
+	z-index: 1;
+	transition : opacity 1s;
+}
+
+
+#welcome{
+	position: absolute;
+	top: 150px;
+	width: 100%;
+	z-index: 1;
+	color: #FFF;
+	font-size: 50px;
+	text-align: center;
+}
+
+section{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+small{
+	font-size: 20px;
+}
+blockquote{
+	font-size: 15px;
+}
+
+#more-controls{
+	position: absolute;
+	display: none;
+	top: 250px;
+	right: 20px;
+	width: 100px;
+	background: #FFF;
+	text-align: center;
+	z-index: 3;
+}
+
+#a{
+	background: #DA251D;
+}
+#b{
+	background: #e77817;
+}
+#c{
+	background: #fff500;
+}
+.cls{
+	color: #FFF;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.sktch, #print_button{
+	display: block;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	width: 100px;
+	height: 100%;
+	margin: 0;
+	background: #FFF;
+	border: none;
+	cursor: pointer;
+	text-decoration: none !important;
+	color: #000;
+}
+.on{
+	text-decoration: none !important;
+	background: #001411;
+	border-color: #4d90fe;
+	color: #FFF;
+}
+
+#canvas{
+	position: fixed !important;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .1;
+	pointer-events: none;
+	z-index: 2;
+}
+
+#intro{
+	z-index: 5;
+	display: none;
+}
+
+
+.clearfix{
+	clear: both;
+}
+

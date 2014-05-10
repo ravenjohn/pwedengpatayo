@@ -1,0 +1,63 @@
+<!doctype html>
+	<head>
+		<title>Pwedeng Patayo?</title>
+		<link rel="shortcut icon" href="favicon.png" />
+		<link rel="image_src" href="img/favicon.png" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/print.css" media="print"/>
+		<meta name="description" content="PwedengPatayo.ph determines if your business, house, or building's location is disaster-free." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:image" content="http://ravenjohn.github.io/pwedengpatayo/img/logo.png"/>
+		<meta property="og:title" content="Pwedeng Patayo?"/>
+		<meta property="og:url" content="http://ravenjohn.github.io/pwedengpatayo/"/>
+		<meta property="og:site_name" content="PwedengPatayo.ph"/>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8vJMsLyPoWsxqq4njcJzcHFIEwQI5zic&sensor=false&libraries=places"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery.js"></script>
+		<script type="text/javascript" src="js/geoxml3.js"></script>
+	</head>
+	<body>
+		<div id="intro">
+			<p>This document servers as a basis for building permit number ______________.
+This is to certify that the construction of the building, together with all the consequence defined by the data provided by the PwedePatayo.ph, can go on the described site of choosing.<br /><br />
+Here are the remarks on the Hazard Points on the said area.
+<br />
+1. Sample hazard point, example, medium flooding
+<br />
+2. Storm surge
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+Certified this ________ day of ________.<br />
+Certified by _________________.<br />
+LGU Incharge<p>
+		</div>
+		<section>
+			<div id="overlay"></div>
+			<input id="pac-input" class="controls" type="text" placeholder="Ilagay kung saan gusto magpatayo" />
+			<header id="welcome">
+				Gusto mo bang magpatayo?
+				<br />
+				<small>
+					ng bahay, negosyo, o gusali?
+				</small>
+				<br /><br /><br />
+				<blockquote>
+					Alamin ang seguridad ng lugar na gustong pagtayuan
+					<br />
+					laban sa mga sakuna tulad ng baha, bagyo at paguho ng lupa.
+				</blockquote>
+			</header>
+			<canvas id="canvas"></canvas>
+			<div id="map"></div>
+			<div id="more-controls">
+				<div id="a" class="cls">> 1.5m</div>
+				<div id="b" class="cls">0.5 - 1.5m</div>
+				<div id="c" class="cls">0.1 - 1.5m</div>
+				<a href="#canvas" data-tool="marker" class="sktch" id="draw_button">Marker</a>
+				<a href="#canvas" data-size="15" data-tool="eraser" class="sktch" id="erase_button">Eraser</a>
+				<a href="#canvas" class="sktch" id="clear_button">Clear</a>
+				<button id="print_button">Print</button>
+			</div>
+		</section>
+		<script type="text/javascript" src="//intridea.github.io/sketch.js/lib/sketch.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
